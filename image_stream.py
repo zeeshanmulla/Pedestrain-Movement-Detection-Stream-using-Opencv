@@ -12,7 +12,7 @@ def index():
 def gen():
     """Video streaming generator function."""
 
-    img = cv2.imread("lizard.jpg")
+    img = cv2.imread("data/cat.jpg")
     img = cv2.resize(img, (0,0), fx=0.5, fy=0.5) 
     frame = cv2.imencode('.jpg', img)[1].tobytes()
     yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
