@@ -12,7 +12,7 @@ def index():
 
 def gen():
     """Video streaming generator function."""
-    cap = cv2.VideoCapture('768x576.avi')
+    cap = cv2.VideoCapture('data/overpass- BriefCam Syndex.mp4')
 
     # Read until video is completed
     while(cap.isOpened()):
