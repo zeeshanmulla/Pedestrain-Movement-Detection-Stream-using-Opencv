@@ -1,8 +1,8 @@
-set FLASK_APP=stream_imag.py
+set FLASK_APP=image_stream.py
 flask run --host=0.0.0.0
 
 
-set FLASK_APP=stream_video.py
+set FLASK_APP=video_stream.py
 flask run --host=10.0.0.10
 
 http://10.0.0.10:5000/
@@ -11,5 +11,5 @@ http://10.0.0.10:5000/
 
 
 
-set FLASK_APP=stream_hum_counter_v1.py
+set FLASK_APP=webstreamvideo_main.py
 flask run --host=10.0.0.10
